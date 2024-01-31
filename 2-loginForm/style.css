@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.full-screen-container {
+  background-image: url(images/kace-rodriguez-p3OzJuT_Dks-unsplash.jpg);
+  width: 100vw;
+  /* width: 100svw; */
+  height: 100vh;
+  /* height: 100svh; */
+  background-size: cover;
+  /* background-position: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+}
+
+.login-container {
+  background-color: rgba(91, 77, 77, 0.608);
+  width: 80%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px rgb(40, 38, 38);
+  padding: 40px 30px;
+}
+
+.login-title {
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group input {
+  color: white;
+  font-size: large;
+  padding: 3px 6px;
+  border-radius: 0.4em;
+  border: none;
+  outline: none;
+  height: 2.5em;
+  background-color: rgba(8, 7, 7, 0.4);
+}
+
+.input-group input:focus {
+  box-shadow: 0 0 0 1px rgb(65, 67, 206);
+}
+
+.success input {
+  box-shadow: 0 0 0 1px rgb(62, 176, 10);
+}
+
+.error input {
+  box-shadow: 0 0 0 1px rgb(206, 59, 33);
+}
+
+.success .msg {
+    color:rgb(52, 189, 52);
+}
+
+.error .msg{
+    color:red;
+}
+
+.login-button{
+    font-size: 30px;
+    padding:10px;
+}

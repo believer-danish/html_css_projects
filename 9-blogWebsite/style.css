@@ -1,0 +1,251 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  font-family: "roboto";
+
+}
+
+nav {
+  font-size: 1.8rem;
+  min-height: 10vh;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul {
+  font-size: 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: end;
+}
+nav ul li i {
+  font-size: 2rem;
+}
+
+nav ul li:hover {
+  box-shadow: 0px 2px 0 0 black;
+}
+.fa-solid {
+  display: none;
+}
+
+.section-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-section {
+  width: 90vw;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+.section-one {
+  padding: 10vh 10vw;
+}
+.section-one .text h1 {
+  font-size: 5vmax;
+  font-weight: 500;
+}
+.section-one .text h4 {
+  font-size: 2.5vmax;
+  font-weight: 300;
+}
+
+.section-one .image,
+.text {
+  flex-basis: 50%;
+}
+.section-one .image img {
+  border-radius: 2rem;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.section-two {
+  /* background-color: red; */
+  display: flex;
+  box-shadow: 2px 2px 3px 5px #ccc;
+}
+.section-two .text {
+  padding: 10vmin 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-two .text .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-two .image {
+  /* background-color: blue; */
+  flex-basis: 50%;
+  max-height: 50vh;
+  /* border-radius: 50px; */
+  overflow: hidden;
+}
+
+.section-two .image img {
+  height: 100%;
+  width: 100%;
+  /* object-fit: contain; */
+  border-radius: 50px;
+}
+
+.section-two h1 {
+  font-size: 4vmax;
+}
+
+.section-two p {
+  margin: 20px 0;
+  color: #807575;
+}
+
+.section-three {
+  padding-top: 50px;
+  gap: 20px;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.section-three .card {
+  display: flex;
+  box-shadow: 2px 2px 3px 3px #ccc;
+  flex-direction: column-reverse;
+  /* max-width: 320px; */
+}
+
+.section-three h1 {
+  font-size: 2vmax;
+}
+
+.section-three p {
+  margin: 20px 0;
+  color: #807575;
+}
+
+.section-three .image {
+  /* background-color: blue; */
+  flex-basis: 100%;
+  max-height: 50vh;
+
+  /* border-radius: 50px; */
+  overflow: hidden;
+}
+
+.section-three .image img {
+  height: 100%;
+  width: 100%;
+  /* object-fit: contain; */
+  /* border-radius: 50px; */
+}
+
+.section-four {
+  margin-top: 5vmax;
+  /* background-color: red; */
+  display: flex;
+}
+.section-four .text {
+  padding: 5vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* background-color: blue; */
+}
+.section-four .text h1 {
+  font-size: 4vmax;
+}
+.section-four .text p {
+  width: 60%;
+  margin: 30px 0;
+}
+.section-four .image {
+  width: 65%;
+  background-color: pink;
+  height: 100vh;
+}
+.section-four .image img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.last-button {
+  margin-top: 5vmax;
+  display: flex;
+  justify-content: end;
+}
+.last-button button {
+  width: 20vw;
+  height: 5vh;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color:rgb(133, 15, 133);
+}
+
+.section-four .text .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer{
+margin-top: 3vmax;
+    height: 8vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .icons i {
+  margin:0 10px;
+  font-size: 2rem;
+}
+
+@media (width <= 470px) {
+  .fa-solid {
+    display: initial;
+  }
+  nav ul {
+    display: none;
+  }
+  .section-one {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section-two {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+}
+
+@media (width <= 900px){
+    .section-four{
+    flex-direction: column;
+    text-align: center;
+
+    }
+    .section-four .text p {
+    margin:0 auto;
+    }
+    .section-four .image{
+    width: 100%;
+    }
+}

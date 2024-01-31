@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.main_container {
+  height: 100%;
+  
+  font-family: "Poppins", sans-serif;
+}
+
+.section_one {
+  min-height: 100vh;
+  background-image: url(images/developer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  color: white;
+  padding: 6vh 0 0 20vmax;
+  font-size: 1.3em;
+}
+
+.section_one h2 span {
+  font-size: 1.5em;
+  color: red;
+}
+.section_one h1 {
+  font-size: 3em;
+  color: whitesmoke;
+}
+
+.section_two {
+  min-height: 20vh;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 20vh;
+  font-size: 3em;
+}
+
+.section_three {
+  min-height: 80vh;
+  /* background-color: red; */
+}
+
+.grid_container {
+    padding:20px;
+  /* background-color: blue; */
+  display: grid;
+  width: 80%;
+  
+  margin: 10vh auto;
+  
+  gap:53px;
+  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px black;
+}
+
+.item:hover{
+    transform:scale(1.05,1.05);
+    transition: transform 0.2s linear;
+}
+
+.item .text h1{
+    padding:20px;
+}
+
+.text{
+    padding:20px;
+}
+
+.section_four{
+    
+    display: flex;
+
+}
+.section_four h1{
+    font-size: 2em;
+    padding:15px;
+
+}
+.right,.left{
+    flex-basis: 50%;
+    padding:40px 60px;
+    
+}
+
+.right{
+     background: #722300;;
+
+}
+.left{
+    background: #515603;
+}
+
+footer{
+    color:wheat;
+    background-color: black;
+    height: 15vh;
+    text-align: center;
+    line-height: 15vh;
+    font-size: 2em;
+}
+
+@media (width <= 750px){
+    .section_one{
+        min-height: 50vh;
+        font-size: smaller;
+    }
+    .section_one h1{
+        color:red;
+        
+    }
+
+    .section_two{
+        min-height: 10vh;
+        font-size: smaller;
+    }
+
+}
+
